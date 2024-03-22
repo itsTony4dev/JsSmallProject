@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9d214354b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rock Paper Scissor Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissor Game</h1>
+      <form action="">
+        <label for="btn"> Choose your move: </label>
+        <button type="button" id="Rock" onclick="yourTurn(this.id)">
+          <i class="fa-solid fa-hand-fist fa-2xl"></i>
+        </button>
+        <button type="button" id="Paper" onclick="yourTurn(this.id)"><i class="fa-solid fa-hand fa-2xl"></i></button>
+        <button type="button" id="Scissor" onclick="yourTurn(this.id)">
+          <i class="fa-solid fa-hand-peace fa-2xl"></i>
+        </button>
+      </form>
+      <p>
+        Your score: <span id="yourScore">0</span> Computer score:
+        <span id="computerScore">0</span>
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
